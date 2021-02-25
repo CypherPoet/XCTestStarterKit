@@ -1,21 +1,21 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.4
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
 let package = Package(
-    name: "MyLibrary",
-        platforms: [
-        .iOS(SupportedPlatform.IOSVersion.v13),
-        .macOS(SupportedPlatform.MacOSVersion.v10_15),
-        .tvOS(SupportedPlatform.TVOSVersion.v13),
-        .watchOS(SupportedPlatform.WatchOSVersion.v6),
+    name: "XCTestStarterKit",
+    platforms: [
+        .iOS(SupportedPlatform.IOSVersion.v14),
+        .macOS(SupportedPlatform.MacOSVersion.v11),
+        .tvOS(SupportedPlatform.TVOSVersion.v14),
+        .watchOS(SupportedPlatform.WatchOSVersion.v7),
     ],
     products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
-            name: "MyLibrary",
-            targets: ["MyLibrary"]
+            name: "XCTestStarterKit",
+            targets: ["XCTestStarterKit"]
         ),
     ],
     dependencies: [
@@ -26,13 +26,13 @@ let package = Package(
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
-            name: "MyLibrary",
+            name: "XCTestStarterKit",
             dependencies: [],
             path: "Sources/"
         ),
         .testTarget(
-            name: "MyLibraryTests",
-            dependencies: ["MyLibrary"],
+            name: "XCTestStarterKitTests",
+            dependencies: ["XCTestStarterKit"],
             path: "Tests/"
         ),
     ]
