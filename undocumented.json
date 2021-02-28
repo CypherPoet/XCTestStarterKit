@@ -1,0 +1,19 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/runner/work/XCTestStarterKit/XCTestStarterKit/Sources/MyLibrary/MyLibrary.swift",
+      "line": 1,
+      "symbol": "MyLibrary",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/XCTestStarterKit/XCTestStarterKit/Sources/MyLibrary/MyLibrary.swift",
+      "line": 2,
+      "symbol": "MyLibrary.text",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/runner/work/XCTestStarterKit/XCTestStarterKit"
+}
