@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/usr/bin/env zsh
 
 #
 # To Use this script, make sure you have llvm-cov available on your
