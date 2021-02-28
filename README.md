@@ -2,11 +2,10 @@
 
 <!-- Header Logo -->
 
-<!--
-<p align="center">
-   <img width="600px" src="./Resources/Assets/banner-logo.png" alt="Banner Logo">
-</p>
--->
+<div align="center">
+   <img width="420px" src="./Resources/Assets/Logo/Transparent@3x.png" alt="Banner Logo">
+</div>
+
 
 <!-- Badges -->
 
