@@ -7,12 +7,12 @@ extension XCTestCase {
     /// Helper for asserting that an expression throws an error of a given type.
     ///
     /// Use this in tandem with custom Error types that conform to `Equatable`
-    public func assert<Success, Failure>(
-        _ result: Result<Success, Failure>,
-        throws error: Failure,
+    public func assert<ResultType, ExpectedError>(
+        _ expression: @autoclosure () throws -> ResultType,
+        throws error: ExpectedError,
         in file: StaticString = #file,
         line: UInt = #line
-    ) where Failure: Error & Equatable {
+    ) where ExpectedError: Error & Equatable {
         var thrownError: Error?
         
         XCTAssertThrowsError(
@@ -24,14 +24,14 @@ extension XCTestCase {
         }
         
         XCTAssertTrue(
-            thrownError is Failure,
+            thrownError is ExpectedError,
             "Unexpected error type: \(type(of: thrownError))",
             file: file,
             line: line
         )
 
         XCTAssertEqual(
-            thrownError as? Failure,
+            thrownError as? ExpectedError,
             error,
             file: file,
             line: line

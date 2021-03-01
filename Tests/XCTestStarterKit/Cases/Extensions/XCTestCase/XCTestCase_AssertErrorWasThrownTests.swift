@@ -39,11 +39,6 @@ extension XCTestCase_AssertExpressionThrowsErrorTests {
 }
 
 
-// MARK: - Factories
-private extension XCTestCase_AssertExpressionThrowsErrorTests {
-}
-
-
 // MARK: - "Given" Helpers (Conditions Exist)
 private extension XCTestCase_AssertExpressionThrowsErrorTests {
 

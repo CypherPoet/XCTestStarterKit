@@ -74,14 +74,7 @@ targets: [
 Then simply `import XCTestStarterKit` wherever you’d like to use it.
 
 
-## Usage
-
-
-
-## 🗺 Roadmap
-
-- World Domination
-
+<!-- ## Usage -->
 
 
 ## Contributing
