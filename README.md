@@ -50,7 +50,7 @@ You can add `XCTestStarterKit` as a package dependency in your `Package.swift` f
 let package = Package(
     //...
     dependencies: [
-        .package(url: "https://github.com/CypherPoet/XCTestStarterKit", .exact("0.0.2")),
+        .package(url: "https://github.com/CypherPoet/XCTestStarterKit", .exact("0.0.3")),
     ],
     //...
 )
