@@ -38,7 +38,7 @@ extension XCTestCase_AwaitCompletionOfPublisherTests {
         sut = nil
         stringToPublish = nil
 
-        try super.setUpWithError()
+        try super.tearDownWithError()
     }
 }
 
